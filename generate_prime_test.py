@@ -92,4 +92,4 @@ with open("./generate_prime.txt", "w") as writer:
             writer.write(f"bits = {bits} => {time_to_generate} segundos\n")
         writer.write(f"O tempo médio para gerar um número primo com {numBits} bits foi {avg_time} segundos\n")
 
-    writer.write(possible_primes)
+    writer.write(possible_primes.__str__())
